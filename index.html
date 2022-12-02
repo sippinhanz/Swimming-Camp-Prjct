@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+</head>
+<body style="background-color:#D0D4D5;">
+
+<h2>Seznam kamarádů</h2>
+{% for user in users %}
+
+    <h3>Nick: {{user}}</h3>
+{% endfor %}
+
+
+   <style>
+    .rainbow-text {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 50px;
+        text-shadow: #A3A3A3 1px 1px 1px;
+    }
+
+    .rainbow-text .block-line > span {
+        display: inline-block;
+    }
+    button {
+        display: inline-block;
+        background-color: #495D88;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+    </style>
+
+    <div class="rainbow-text" style="text-align: center;">
+        <div class="rainbow-text" style="text-align: center;">
+        <span class="block-line"><span><span style="color:#ff0000;">Rozsazeni </span><span style="color:#ff3c00;">V </span><span style="color:#ff7300;">lodich</span><span style="color:#ffaa00;">&nbsp;</span></span><span><span style="color:#ffe500;">na </span><span style="color:#e1ff00;">vodackem </span><span style="color:#aaff00;">&nbsp;</span></span><span><span style="color:#6eff00;">kurzu </span><span style="color:#37ff00;">2023 </span><span style="color:#00ff00;"></span><span style="color:#00ff3c;"> SPSE</span><span style="color:#00ff73;"> Jecna</span>
+    </div>
+    <br><br><br>
+    <form action="/registrace">
+        <button style="background:#495D88;color:#eeeeee;padding:12px;border:0" type="submit">Click here</button>
+     </form>
+
+
+     <br>
+     <br>
+     <br>
+     
+
+     <form action="/feedback">
+        <button style="background:#495D88;color:#eeeeee;padding:12px;border:0" type="submit">feedback</button>
+     </form>
+
+
+
+
+</div>
+</body>
+</html>
